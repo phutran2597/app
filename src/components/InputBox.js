@@ -22,14 +22,14 @@ const InputBox = ({ onChange, data }) => {
         case 'inputText':
             return (
                 <InputBoxWrapper data={data}>
-                    <input type="text" onChange={handleInputChange} name={data.name} id={data.id} className="mt-1 block w-full rounded-md border-gray-300 focus:border-main focus:ring-main focus:ring-opacity-50" />
+                    <input type="text" onChange={handleInputChange} name={data.name} id={data.id} className="mt-1 block w-full rounded-md border-gray-300 focus:border-cyan-900 focus:ring-cyan-900 focus:ring-opacity-50" />
                 </InputBoxWrapper>
             )
             break;
         case 'password':
             return (
                 <InputBoxWrapper data={data}>
-                    <input type="password" onChange={handleInputChange} name={data.name} id={data.id} className="mt-1 block w-full rounded-md border-gray-300 focus:border-main focus:ring-main focus:ring-opacity-50" />
+                    <input type="password" onChange={handleInputChange} name={data.name} id={data.id} className="mt-1 block w-full rounded-md border-gray-300 focus:border-cyan-900 focus:ring-cyan-900 focus:ring-opacity-50" />
                 </InputBoxWrapper>
             );
             break;
