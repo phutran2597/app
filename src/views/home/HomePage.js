@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Logo from "../../assets/images/logo.png";
+import Icon from "../../components/Icon";
 import MenuItems from "../../components/MenuItems";
 import SideNavbar from "../../components/SideNavbar";
 
@@ -76,21 +77,19 @@ const HomePage = () => {
                         </SideNavbar>
                     </div>
                 </div>
-                <div className="content h-screen w-5/6">
-                    <div className="flex">
-                        <ul className="c-breadcrumb d-flex">
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Dashboard</a>
-                            </li>
-                        </ul>
+                <div className="content h-screen w-5/6 bg-cyan-50 p-5">
+                    <div className="flex justify-between">
+                        <div className="c-breadcrumb flex text-gray-400">
+                            <a href="">Home</a>
+                            <span className="separator">></span>
+                            <span>Dashboard</span>
+                        </div>
+
                         <div className="flex c-control">
-                            <a href="" className="c-icon"><img src="" alt="" /></a>
-                            <a href="" className="c-icon"><img src="" alt="" /></a>
-                            <a href="" className="c-icon"><img src="" alt="" /></a>
-                            <div className="c-user flex">
+                            <Icon icon="fa-solid fa-bell" />
+                            <Icon icon="fa-solid fa-user" />                            
+                            <Icon icon="fa-solid fa-gear" /> 
+                            <div className="c-user flex items-center">
                                 <div className="c-user__ava">
                                     <img src="" alt="" />
                                 </div>
