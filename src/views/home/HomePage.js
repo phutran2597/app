@@ -1,57 +1,64 @@
 import { useRouter } from "next/router";
 import Logo from "../../assets/images/logo.png";
-import SideNav from "../../components/SideNav";
+import MenuItems from "../../components/MenuItems";
+import SideNavbar from "../../components/SideNavbar";
 
 const HomePage = () => {
-    const sideNavList = [
+    const menuItems = [
         {
-            id: 1,
-            icon: '',
             path: '/home',
             name: 'Dashboard',
             position: 1,
-            parent: 0
+            parent: 0,
+            icon: 'fa-solid fa-house',
         },
         {
-            id: 2,
-            icon: '',
             path: '/users',
             name: 'Users',
-            position: 1,
-            parent: 0
+            position: 3,
+            parent: 0,
+            icon: 'fa-solid fa-house'
         },
         {
-            id: 3,
-            icon: '',
             path: '/roles',
             name: 'Roles',
-            position: 1,
-            parent: 0
+            position: 2,
+            parent: 0,
+            icon: 'fa-solid fa-house'
         },
         {
-            id: 4,
-            icon: '',
             path: '/permissions',
             name: 'Permissions',
-            position: 1,
-            parent: 0
+            position: 4,
+            parent: 0,
+            icon: 'fa-solid fa-house'
         },
         {
-            id: 5,
-            icon: '',
             path: '/products',
             name: 'Products',
-            position: 1,
-            parent: 0
-        },
-        {
-            id: 6,
-            icon: '',
-            path: '/products/1',
-            name: 'Product 1',
-            position: 1,
-            parent: 5
-        },
+            position: 5,
+            parent: 0,
+            child: true,
+            icon: 'fa-solid fa-house',
+            subMenu: [
+                {
+    
+                    path: '/products/1',
+                    name: 'Product 1',
+                    position: 1,
+                    icon: '',
+                    subMenu: [
+                        {
+            
+                            path: '/products/1/1',
+                            name: 'Product 1.1',
+                            position: 1,
+                            icon: ''
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 
     return (
@@ -64,7 +71,9 @@ const HomePage = () => {
                                 <img src={Logo.src} alt="" />
                             </a>
                         </h1>
-                        <SideNav list={ sideNavList }/>
+                        <SideNavbar>
+                            <MenuItems items={menuItems} />
+                        </SideNavbar>
                     </div>
                 </div>
                 <div className="content h-screen w-5/6">

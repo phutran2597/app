@@ -18,3 +18,30 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.sidebar{
+  &__nav{
+    a{
+      &.has-sub{
+        position:relative;
+        &:after{
+          content:'';
+          position:absolute;
+          top:50%;
+          right:10px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 5px 0 5px;
+          border-color: #fff transparent transparent transparent;
+          transform:translateY(-50%);
+        }
+        &.is-active{
+          &:after{
+            transform:translateY(-50%) scaleY(-1);
+          }
+        }
+      }
+    }
+  }
+}
