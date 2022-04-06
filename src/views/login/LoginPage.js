@@ -38,7 +38,7 @@ const LoginPage = () => {
         event.preventDefault();
         const {username, password} = formInput;
         if(username == "admin" && password == "admin"){
-            router.push('/home');
+            router.push('/dashboard');
         }
     }
 

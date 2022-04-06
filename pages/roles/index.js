@@ -1,7 +1,6 @@
 import Head from "next/head";
-import HomePage from "../../src/views/home/HomePage";
 
-const Home = () => {
+const Roles = () => {
     return (
         <div>
             <Head>
@@ -10,10 +9,10 @@ const Home = () => {
                 <link rel="icon" href="assets/images/favicon.png" />
             </Head>
             <main>
-                <HomePage />
+                Roles content
             </main>
         </div>
     )
 }
 
-export default Home;
+export default Roles;
