@@ -3,6 +3,8 @@ import ButtonStyle01 from '../../components/ButtonStyle01';
 import InputBox from '../../components/InputBox';
 import Logo from "../../assets/images/logo.png";
 import { useRouter } from 'next/router'
+import Link from "next/link";
+import Image from "next/image";
 
 const LoginPage = () => {
     const [formInput, setFormInput] = useState({});
@@ -45,7 +47,11 @@ const LoginPage = () => {
     return (
         <div className="flex h-screen items-center px-4">
             <div className="w-96 max-w-full mx-auto border">
-                <h1 className="logo mb-7"><a href=""><img className="mx-auto" src={Logo.src} alt=""/></a></h1>
+                <h1 className="logo mb-7">
+                    <Link href="/">
+                        <Image src={Logo.src} width="100%" height="40%" layout="responsive" objectFit="contain"/>
+                    </Link>
+                </h1>
                 <div className="px-4 pb-10">
                     <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-6'>       
                         {
