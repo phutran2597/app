@@ -2,7 +2,7 @@ import Logo from "../../components/Logo";
 import MenuItems from "../../components/MenuItems";
 import Sidebar from "../../components/Sidebar";
 import SideNavbar from "../../components/SideNavbar";
-import NavItems from "../../constants/navItems";
+import NavItems from "../../constants/NavItems";
 import UserInfo from "../../components/UserInfo";
 import Icon from "../../components/Icon";
 
