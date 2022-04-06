@@ -1,6 +1,6 @@
 // import '../src/assets/css/style.css'
 import '../src/assets/css/style.scss'
-import Layout from '../src/views/layout/layout'
+import Layout from '../src/views/layout/Layout'
 import LoginPage from '../src/views/login/LoginPage'
 
 function MyApp({ Component, pageProps, router }) {

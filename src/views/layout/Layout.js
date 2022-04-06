@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
                         <Icon icon="fa-solid fa-bell" />
                         <Icon icon="fa-solid fa-user" />
                         <Icon icon="fa-solid fa-gear" />
-                        <UserInfo name="Username" avatar="" />
+                        <UserInfo name="Username" avatar="/images/logo.png" />
                     </div>
                 </div>
                 {children}

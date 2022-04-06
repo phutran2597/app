@@ -6,7 +6,9 @@ const Logo = () => {
     return (
         <h1 className="logo">
             <Link href="/">
-                <Image src={LogoImage.src} width="100%" height="40%" layout="responsive" objectFit="contain"/>
+                <a>
+                    <Image src={LogoImage.src} width="100%" height="40%" layout="responsive" objectFit="contain" alt=""/>
+                </a>
             </Link>
         </h1>
     )
