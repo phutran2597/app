@@ -1,19 +1,19 @@
 import Head from 'next/head'
-import Dashboard from '../src/views/dashboard/Dashboard'
+import Register from '../../../src/views/login/Register'
 
-const Home = () => {
+const RegisterPage = () => {
   return (
     <div>
       <Head>
-        <title>Dashboard</title>
+        <title>Register Page</title>
         <meta name="description" content="" />
         <link rel="icon" href="assets/images/favicon.png" />
       </Head>
       <main>
-        <Dashboard />
+        <Register />
       </main>
     </div>
   )
 }
 
-export default Home
+export default RegisterPage

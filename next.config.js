@@ -6,6 +6,7 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, '/src/assets/css')],
   },
+  trailingSlash: true
 }
 
 module.exports = nextConfig

@@ -1,19 +1,19 @@
 import Head from 'next/head'
-import Dashboard from '../src/views/dashboard/Dashboard'
+import ForgotPassword from '../../../src/views/login/ForgotPassword'
 
-const Home = () => {
+const ForgotPage = () => {
   return (
     <div>
       <Head>
-        <title>Dashboard</title>
+        <title>Forgot Page</title>
         <meta name="description" content="" />
         <link rel="icon" href="assets/images/favicon.png" />
       </Head>
       <main>
-        <Dashboard />
+        <ForgotPassword />
       </main>
     </div>
   )
 }
 
-export default Home
+export default ForgotPage

@@ -9,14 +9,14 @@ const NavItems = [
     {
         path: '/users',
         name: 'Users',
-        position: 3,
+        position: 2,
         parent: 0,
         icon: 'fa-solid fa-house'
     },
     {
         path: '/roles',
         name: 'Roles',
-        position: 2,
+        position: 3,
         parent: 0,
         icon: 'fa-solid fa-house'
     },

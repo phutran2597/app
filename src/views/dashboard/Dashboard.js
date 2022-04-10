@@ -1,4 +1,4 @@
-const DashboardContent = () => {
+const Dashboard= () => {
     
     return (
         <>
@@ -7,4 +7,4 @@ const DashboardContent = () => {
     )
 }
 
-export default DashboardContent
+export default Dashboard
