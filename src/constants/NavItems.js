@@ -1,31 +1,37 @@
+import HomeIcon from '@mui/icons-material/Home';
+import GroupIcon from '@mui/icons-material/Group';
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
+import BadgeIcon from '@mui/icons-material/Badge';
+import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
+
 const NavItems = [
     {
         path: '/dashboard',
         name: 'Dashboard',
         position: 1,
         parent: 0,
-        icon: 'fa-solid fa-house',
+        icon: <HomeIcon/>,
     },
     {
         path: '/users',
         name: 'Users',
         position: 2,
         parent: 0,
-        icon: 'fa-solid fa-house'
+        icon: <GroupIcon/>,
     },
     {
         path: '/roles',
         name: 'Roles',
         position: 3,
         parent: 0,
-        icon: 'fa-solid fa-house'
+        icon: <AccessibilityIcon/>
     },
     {
         path: '/permissions',
         name: 'Permissions',
         position: 4,
         parent: 0,
-        icon: 'fa-solid fa-house'
+        icon: <BadgeIcon/>
     },
     {
         path: '/products',
@@ -33,7 +39,7 @@ const NavItems = [
         position: 5,
         parent: 0,
         child: true,
-        icon: 'fa-solid fa-house',
+        icon: <LocalFloristIcon/>,
         subMenu: [
             {
 
